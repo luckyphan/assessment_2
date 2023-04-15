@@ -17,7 +17,7 @@
     array method to calculate the sum of all
     the food. 
 */
-
+console.log("----------------------------------")
 const cart = [
     {
         name: 'pizza', 
@@ -34,7 +34,7 @@ const cart = [
 ]
 
 //CODE HERE
-
+console.log("----------------------------------")
 const summedPrice = cart.reduce((acc, curr) => acc + curr.price,0)
 console.log(summedPrice)
 
@@ -54,6 +54,7 @@ console.log(summedPrice)
 */
 
 //CODE HERE
+console.log("----------------------------------")
 const calcFinalPrice = (cartTotal, couponValue, tax) => {
     cartTotal = (cartTotal * (1+tax)) - couponValue
     return cartTotal
@@ -82,10 +83,10 @@ console.log(calcFinalPrice(summedPrice,5,.05))
 
 /*
     TEXT ANSWER HERE
-    allergies or intolerences because allergies are a thing and the products to avoid
-    price range because people are struggling
-    past history becaue people have likes towards a certain products
-    age because some every age would like to browse certain products
+    products array that holds the products the customers wish to buy
+    subtotal containing the sum of product prices
+    shipping that holds the shipping costs
+    total that adds that subtotal with the shipping
 */
 
 /*
@@ -94,10 +95,11 @@ console.log(calcFinalPrice(summedPrice,5,.05))
 */
 
 //CODE HERE
+console.log("----------------------------------")
 
 const customer = {
-    allergies: ['gluten','lactose'],
-    priceRange: '$$',
-    pastHistory: ['depends','ice cream','wine'],
-    age: 66
+    products:['shampoo','conditioner','toothpase'],
+    subtotal: 32,
+    shipping: 8,
+    total: 40
 };

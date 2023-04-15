@@ -20,6 +20,7 @@
 */
 
 //CODE HERE
+console.log("----------------------------------")
 class Employee {
     constructor(name,shifts){
         this.name = name;
@@ -28,8 +29,11 @@ class Employee {
     getSchedule({name,shifts}){
         console.log(`${name} works on ${shifts}`)
     }
+    /*works with getSchedule(){
+        console.log(`${this.name} works on ${this.shifts}`)
+    }
+    */
 }
-
 /*
     Create a new instance of your class.
     Save it to a variable called `empOne`.
@@ -41,6 +45,7 @@ class Employee {
 */
 
 //CODE HERE
+console.log("----------------------------------")
 let empOne = new Employee('Tracy','weekend mornings')
 
 /*
@@ -49,8 +54,8 @@ let empOne = new Employee('Tracy','weekend mornings')
 */
 
 //CODE HERE
+console.log("----------------------------------")
 empOne.getSchedule(empOne)
-
 /*
     Make a copy of the empOne object
     using the spread operator.
@@ -64,11 +69,11 @@ empOne.getSchedule(empOne)
 */
 
 //CODE HERE
+console.log("----------------------------------")
 let empTwo = {...empOne}
 empTwo.name = 'Nick'
 console.log(empTwo)
 console.log(empOne)
-
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -94,7 +99,7 @@ console.log(empOne)
 */
 
 //CODE HERE
-
+console.log("----------------------------------")
 class Manager extends Employee{
     constructor(name,shifts,employees){
         super(name,shifts);
@@ -107,7 +112,6 @@ class Manager extends Employee{
         this.employees.push(emp);
     }
 }
-
 /*
     Create a new instance of your class.
     Save it to a variable called `manager`.
@@ -120,14 +124,15 @@ class Manager extends Employee{
 */
 
 //CODE HERE
+console.log("----------------------------------")
 let manager = new Manager('Kristen','weekday mornings',['Allison','Phuong','Cong'])
-
 /*
     Call the `getEmployees` method on the
     `manager` object.  
 */
 
 //CODE HERE
+console.log("----------------------------------")
 manager.getEmployees(manager)
 /*
     Call the `addEmployee` method on the 
@@ -136,6 +141,7 @@ manager.getEmployees(manager)
 */
 
 //CODE HERE 
+console.log("----------------------------------")
 manager.addEmployee('Tree')
 /*
     Call the `getEmployees` method on the
@@ -144,4 +150,5 @@ manager.addEmployee('Tree')
 */
 
 //CODE HERE
+console.log("----------------------------------")
 manager.getEmployees(manager)

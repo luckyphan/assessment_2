@@ -31,6 +31,8 @@
 */
 
 //CODE HERE
+console.log("----------------------------------")
+
 const pizza = {
     name: 'Veganpizzas',
     price: 15.99,
@@ -42,6 +44,7 @@ const pizza = {
 }
 
 
+
 //////////////////PROBLEM 2////////////////////
 /* 
     Let's print a few values from our pizza object.
@@ -51,6 +54,7 @@ const pizza = {
 */
 
 //CODE HERE
+console.log("----------------------------------")
 console.log(pizza.popularity)
 
 /*
@@ -61,8 +65,8 @@ console.log(pizza.popularity)
 */
 
 //CODE HERE
+console.log("----------------------------------")
 console.log(pizza.tags[1])
-
 /*
     Third, destructure the price off of the
     pizza object.
@@ -71,9 +75,9 @@ console.log(pizza.tags[1])
 */
 
 //CODE HERE
+console.log("----------------------------------")
 let {price} = pizza
 console.log(price)
-
 /*
     Fourth, and last, destructure the category
     property.
@@ -82,6 +86,7 @@ console.log(price)
 */
 
 //CODE HERE
+console.log("----------------------------------")
 let {category} = pizza
 console.log(category)
 
@@ -104,6 +109,7 @@ console.log(category)
 //     popularity: 4,
 //     rating: 4.5,
 //     tags: ['vegan','vegetarian','healthy','low-calorie']
+console.log("----------------------------------")
 const foodArr =[
     {
         price: 20,
@@ -141,7 +147,6 @@ const foodArr =[
     }
 ]
 
-
 //////////////////PROBLEM 4////////////////////
 /* 
     Let's filter the food objects according
@@ -155,10 +160,9 @@ const foodArr =[
 */
 
 //CODE HERE
-
+console.log("----------------------------------")
 const filteredFood = foodArr.filter(element => element.tags.includes('cheesy'))
 console.log(filteredFood)
-
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -198,8 +202,7 @@ console.log(filteredFood)
     
     Return the filtered array from the entire function
 */
-
-
+console.log("----------------------------------")
 
 
 const filterByProperty = (property,number,type) =>{
@@ -238,6 +241,7 @@ const filterByProperty = (property,number,type) =>{
 */
 
 //CODE HERE
+console.log("----------------------------------")
 console.log("filter rating above 3")
 console.log(filterByProperty('rating',3,'above'))
 console.log("now below 5")

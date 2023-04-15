@@ -30,6 +30,7 @@
 */
 
 //CODE HERE
+console.log("----------------------------------")
 class Ticket {
     constructor(items, orderTime, customerId){
         this.items = items;
@@ -56,6 +57,7 @@ class Ticket {
 */
 
 //CODE HERE
+console.log("----------------------------------")
 let firstTicket = new Ticket(['cheese bread','garlic sauce','soda'],'8:63 AM', 333)
 
 /*
@@ -65,4 +67,5 @@ let firstTicket = new Ticket(['cheese bread','garlic sauce','soda'],'8:63 AM', 3
 */
 
 //CODE HERE
+console.log("----------------------------------")
 firstTicket.updateStatus('cooking')
